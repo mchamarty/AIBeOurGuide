@@ -1,0 +1,43 @@
+{
+    "metrics_table": [
+        {
+            "task_repetition_score": 12,
+            "workflow_complexity": 24,
+            "data_structure_score": 3,
+            "communication_frequency": 2,
+            "average_sentiment": 0.21075,
+            "stakeholder_dependency": 1.0,
+            "time_spread": 190800.0
+        },
+        {
+            "task_repetition_score": 8,
+            "workflow_complexity": 16,
+            "data_structure_score": 2,
+            "communication_frequency": 2,
+            "average_sentiment": 0.21075,
+            "stakeholder_dependency": 1.0,
+            "time_spread": 496800.0
+        },
+        {
+            "task_repetition_score": 8,
+            "workflow_complexity": 16,
+            "data_structure_score": 2,
+            "communication_frequency": 2,
+            "average_sentiment": 0.21075,
+            "stakeholder_dependency": 1.0,
+            "time_spread": 370800.0
+        },
+        {
+            "task_repetition_score": 8,
+            "workflow_complexity": 16,
+            "data_structure_score": 2,
+            "communication_frequency": 2,
+            "average_sentiment": 0.21075,
+            "stakeholder_dependency": 1.0,
+            "time_spread": 428400.0
+        }
+    ],
+    "input_summary": {
+        "total_departments": 4
+    }
+}

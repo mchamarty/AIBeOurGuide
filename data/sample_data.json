@@ -1,0 +1,39 @@
+{
+    "workflows": [
+        {
+            "tasks": [
+                {
+                    "actions": ["review", "approve"],
+                    "input_types": ["document"],
+                    "output_types": ["approval"]
+                }
+            ],
+            "steps": [
+                {
+                    "type": "decision",
+                    "name": "document_review"
+                }
+            ],
+            "documents": [
+                {
+                    "type": "pdf",
+                    "structured_fields": ["title", "content"]
+                }
+            ],
+            "emails": [
+                {
+                    "sender": "user1",
+                    "recipients": ["user2", "user3"],
+                    "content": "Please review"
+                }
+            ],
+            "chats": [
+                {
+                    "sender": "user2",
+                    "recipients": ["user1"],
+                    "content": "Approved"
+                }
+            ]
+        }
+    ]
+}

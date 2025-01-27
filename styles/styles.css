@@ -1,0 +1,257 @@
+/* 🎯 General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9fafc;
+    color: #333;
+}
+
+/* 🎓 Header */
+header {
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+/* 📚 Section Styles */
+section {
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+/* 📝 Headings */
+h2 {
+    border-bottom: 3px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 25px;
+    color: #4CAF50;
+}
+
+/* 📊 Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.95em;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+/* 📊 Metrics Table Improvements */
+#metrics-table td:nth-child(8) {
+    font-style: italic;
+    color: #666;
+}
+
+/* 🧩 JSON Visualization */
+pre {
+    background: #2d2d2d;
+    color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Collapsible JSON View */
+.json-container {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.json-header {
+    background: #4CAF50;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.json-content {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* 🧠 Why Unique Section */
+#why-unique {
+    margin-top: 50px;
+    padding: 30px;
+    background: #fdfdfd;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+#why-unique h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+#why-unique ul {
+    margin: 10px 0 20px 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+#why-unique ul ul {
+    list-style-type: circle;
+}
+
+#why-unique table {
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+#why-unique th {
+    background: #2c3e50;
+    color: white;
+}
+
+/* 📚 Metric Definitions */
+#definitions {
+    margin-top: 50px;
+    padding: 30px;
+    background: #fdfdfd;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+#definitions table {
+    margin-top: 20px;
+}
+
+#definitions th {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+#definitions td {
+    text-align: left;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* ✅ Callout Highlights */
+.highlight {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* 🎯 Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #555;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -90px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    table, th, td {
+        font-size: 0.85em;
+    }
+
+    pre {
+        font-size: 0.8em;
+    }
+}
+
+/* 🦾 Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 12px;
+    font-size: 0.9em;
+    background: #4CAF50;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
